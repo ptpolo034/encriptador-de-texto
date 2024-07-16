@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador / Desencriptador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-panel">
+            <h2>Encriptador de texto :: Challenge
+            =>["Henry_Polo"]</h2>
+            <textarea id="inputText" placeholder="Escribe tu texto aquí..." required></textarea>
+            <div class="options">
+                <span>* Solo letras minúsculas y sin acentos.</span>
+                <div class="buttons">
+                    <button onclick="processText('encrypt')" class="encrypt-button">Encriptar</button>
+                    <button onclick="processText('decrypt')" class="decrypt-button">Desencriptar</button>
+                    <button onclick="clearText()" class="clear-button">Nuevo</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-panel">
+            <img id="placeholderImage" src="mensaje.png" alt="imagen ningun mensaje">
+            <div id="outputText" class="result" style="display: none;"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
