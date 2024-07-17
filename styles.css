@@ -134,7 +134,6 @@ img {
 
     .left-panel {
         padding: 20px;
-        margin: 20px;
     }
 
     .right-panel {
@@ -148,6 +147,41 @@ img {
 }
 
 @media (max-width: 768px) {
+    .container {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 100%;
+    }
+
+    .left-panel {
+        padding: 20px;
+    }
+
+    .right-panel {
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    textarea {
+        height: 100px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    textarea {
+        height: 80px;
+    }
+
     .buttons {
         flex-direction: column;
         gap: 10px;
@@ -156,28 +190,7 @@ img {
     .encrypt-button,
     .decrypt-button,
     .clear-button {
-        width: 100%;
-        text-align: center;
-    }
-}
-
-@media (max-width: 480px) {
-    h2 {
-        font-size: 18px;
-    }
-
-    textarea {
+        padding: 8px 16px;
         font-size: 14px;
-    }
-
-    .encrypt-button,
-    .decrypt-button,
-    .clear-button {
-        padding: 10px;
-        font-size: 14px;
-    }
-
-    .result {
-        font-size: 16px;
     }
 }
